@@ -19,8 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'inter': ['DM Sans', 'sans-serif'],
-				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Poppins', 'sans-serif'],
+				'playfair': ['Space Grotesk', 'sans-serif'],
+				'heading': ['Space Grotesk', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

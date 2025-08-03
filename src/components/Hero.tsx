@@ -30,7 +30,7 @@ const Hero = () => {
                 <span className="text-primary-foreground">Trusted by 500+ families</span>
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-bold font-playfair leading-tight">
+              <h1 className="text-5xl lg:text-7xl hero-title text-primary-foreground">
                 Unlock Your Child's{" "}
                 <span className="gradient-text">Mathematical Genius</span>
               </h1>

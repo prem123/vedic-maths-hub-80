@@ -25,8 +25,8 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img src={aceLogo} alt="Ace Arithmetic Academy" className="h-12 w-12" />
             <div>
-              <h1 className="text-xl font-bold font-playfair text-foreground">Ace Arithmetic Academy</h1>
-              <p className="text-xs text-muted-foreground">Excellence in Mathematics</p>
+              <h1 className="text-2xl academy-name">Ace Arithmetic Academy</h1>
+              <p className="text-xs text-muted-foreground font-medium tracking-wide">Excellence in Mathematics</p>
             </div>
           </div>
 

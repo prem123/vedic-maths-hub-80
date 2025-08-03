@@ -78,7 +78,7 @@ const AbacusSection = () => {
           <Badge variant="secondary" className="mb-4 text-lg px-6 py-2">
             Abacus Mental Math
           </Badge>
-          <h2 className="text-4xl lg:text-6xl font-bold font-playfair mb-6">
+          <h2 className="text-4xl lg:text-6xl section-title mb-6">
             Master the Art of <span className="gradient-text">Mental Calculation</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -91,7 +91,7 @@ const AbacusSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold font-playfair">How Our Abacus Program Works</h3>
+              <h3 className="text-3xl section-title">How Our Abacus Program Works</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Our comprehensive 8-level program systematically builds your child's mental calculation abilities 
                 through structured learning and consistent practice. Each level introduces new concepts while 
@@ -134,7 +134,7 @@ const AbacusSection = () => {
         {/* Levels Grid */}
         <div className="space-y-8">
           <div className="text-center">
-            <h3 className="text-3xl font-bold font-playfair mb-4">8-Level Program Structure</h3>
+            <h3 className="text-3xl section-title mb-4">8-Level Program Structure</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Our structured approach ensures progressive skill development from basic operations to advanced mental calculations
             </p>

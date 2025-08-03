@@ -80,7 +80,7 @@ const VedicMathsSection = () => {
           <Badge variant="outline" className="mb-4 text-lg px-6 py-2 border-primary text-primary">
             Ancient Wisdom, Modern Application
           </Badge>
-          <h2 className="text-4xl lg:text-6xl font-bold font-playfair mb-6">
+          <h2 className="text-4xl lg:text-6xl section-title mb-6">
             Vedic Mathematics: <span className="gradient-text">The Art of Calculation</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -113,7 +113,7 @@ const VedicMathsSection = () => {
           {/* Content */}
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold font-playfair">5000-Year-Old Mathematical Secrets</h3>
+              <h3 className="text-3xl section-title">5000-Year-Old Mathematical Secrets</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Vedic Mathematics consists of 16 powerful sutras (formulas) that can solve mathematical problems 
                 in areas such as arithmetic, algebra, geometry, and calculus. These techniques are not just fast - 
@@ -145,7 +145,7 @@ const VedicMathsSection = () => {
         {/* Techniques */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold font-playfair mb-4">Powerful Calculation Techniques</h3>
+            <h3 className="text-3xl section-title mb-4">Powerful Calculation Techniques</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Learn these time-tested methods that will revolutionize your approach to mathematics
             </p>
@@ -175,7 +175,7 @@ const VedicMathsSection = () => {
 
         {/* Benefits */}
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold font-playfair mb-4">Benefits of Vedic Mathematics</h3>
+          <h3 className="text-3xl section-title mb-4">Benefits of Vedic Mathematics</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Why thousands of students worldwide are choosing Vedic Mathematics for academic excellence
           </p>

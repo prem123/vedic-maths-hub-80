@@ -124,7 +124,7 @@ Please contact me for more information.`;
           <Badge variant="outline" className="mb-4 text-lg px-6 py-2 border-primary text-primary">
             Get Started Today
           </Badge>
-          <h2 className="text-4xl lg:text-6xl font-bold font-playfair mb-6">
+          <h2 className="text-4xl lg:text-6xl section-title mb-6">
             Contact <span className="gradient-text">Ace Arithmetic Academy</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -137,7 +137,7 @@ Please contact me for more information.`;
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-bold font-playfair mb-6">Get in Touch</h3>
+              <h3 className="text-3xl section-title mb-6">Get in Touch</h3>
               
               {/* Contact Methods */}
               <div className="grid gap-6 mb-8">

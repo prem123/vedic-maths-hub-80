@@ -115,7 +115,7 @@ const StudentsSection = () => {
           <Badge variant="secondary" className="mb-4 text-lg px-6 py-2">
             Student Success Stories
           </Badge>
-          <h2 className="text-4xl lg:text-6xl font-bold font-playfair mb-6">
+          <h2 className="text-4xl lg:text-6xl section-title mb-6">
             See Our Students <span className="gradient-text">Excel</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -143,7 +143,7 @@ const StudentsSection = () => {
         {/* Videos */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold font-playfair mb-4">Watch Our Students in Action</h3>
+            <h3 className="text-3xl section-title mb-4">Watch Our Students in Action</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Real demonstrations of mental math mastery from our students across different skill levels
             </p>
@@ -207,7 +207,7 @@ const StudentsSection = () => {
         {/* Testimonials */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold font-playfair mb-4">What Parents Say</h3>
+            <h3 className="text-3xl section-title mb-4">What Parents Say</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Real feedback from parents who have witnessed their children's mathematical transformation
             </p>
@@ -237,7 +237,7 @@ const StudentsSection = () => {
 
         {/* CTA */}
         <div className="text-center bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-2xl p-12">
-          <h3 className="text-3xl font-bold font-playfair mb-4">Ready to Transform Your Child's Mathematical Journey?</h3>
+          <h3 className="text-3xl section-title mb-4">Ready to Transform Your Child's Mathematical Journey?</h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Join hundreds of satisfied parents and watch your child develop incredible mental math abilities
           </p>
