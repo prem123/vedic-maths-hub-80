@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -92,8 +93,14 @@ const StudentsSection = () => {
     }
   };
 
+  const [currentVideo, setCurrentVideo] = useState<string | null>(null);
+
   const openVideo = (videoId: string) => {
-    window.open(`https://www.youtube.com/watch?v=${videoId}`, "_blank");
+    setCurrentVideo(videoId);
+  };
+
+  const closeVideo = () => {
+    setCurrentVideo(null);
   };
 
   const handleWhatsApp = () => {
@@ -145,30 +152,35 @@ const StudentsSection = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {videos.map((video, index) => (
               <Card key={index} className="group hover:shadow-lg smooth-transition overflow-hidden">
-                <div className="relative">
-                  {/* Video Thumbnail */}
-                  <div className="bg-gradient-to-br from-primary/10 to-primary-glow/10 aspect-video flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20"></div>
-                    <button 
-                      onClick={() => openVideo(video.id)}
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-6 shadow-2xl smooth-transition hover:scale-110 z-10"
-                    >
-                      <Play className="h-8 w-8 ml-1" />
-                    </button>
-                    
-                    {/* Duration Badge */}
-                    <div className="absolute bottom-4 right-4 bg-black/80 text-white px-2 py-1 rounded text-sm">
-                      {video.duration}
-                    </div>
-                    
-                    {/* Level Badge */}
-                    <div className="absolute top-4 right-4">
-                      <Badge className={getLevelColor(video.level)}>
-                        {video.level}
-                      </Badge>
-                    </div>
-                  </div>
-                </div>
+                 <div className="relative">
+                   {/* Video Thumbnail */}
+                   <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                     <img 
+                       src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                       alt={video.title}
+                       className="w-full h-full object-cover"
+                     />
+                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 smooth-transition"></div>
+                     <button 
+                       onClick={() => openVideo(video.id)}
+                       className="absolute inset-0 flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-6 shadow-2xl smooth-transition hover:scale-110 m-auto w-20 h-20"
+                     >
+                       <Play className="h-8 w-8 ml-1" />
+                     </button>
+                     
+                     {/* Duration Badge */}
+                     <div className="absolute bottom-4 right-4 bg-black/80 text-white px-2 py-1 rounded text-sm">
+                       {video.duration}
+                     </div>
+                     
+                     {/* Level Badge */}
+                     <div className="absolute top-4 right-4">
+                       <Badge className={getLevelColor(video.level)}>
+                         {video.level}
+                       </Badge>
+                     </div>
+                   </div>
+                 </div>
                 
                 <CardContent className="p-6">
                   <h4 className="font-semibold text-lg mb-2 group-hover:text-primary smooth-transition">
@@ -238,6 +250,26 @@ const StudentsSection = () => {
             </Button>
           </div>
         </div>
+
+        {/* Video Modal */}
+        {currentVideo && (
+          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeVideo}>
+            <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
+              <button 
+                onClick={closeVideo}
+                className="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl font-bold z-10"
+              >
+                ✕
+              </button>
+              <iframe
+                src={`https://www.youtube.com/embed/${currentVideo}?autoplay=1`}
+                className="w-full h-full rounded-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

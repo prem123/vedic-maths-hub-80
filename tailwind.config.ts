@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
+				'inter': ['DM Sans', 'sans-serif'],
 				'playfair': ['Playfair Display', 'serif'],
 			},
 			colors: {

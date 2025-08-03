@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   const handleEmail = () => {
-    window.open("mailto:info@acearithmetic.com", "_self");
+    window.open("mailto:acearithmeticacademy@gmail.com", "_self");
   };
 
   const scrollToSection = (id: string) => {
@@ -121,7 +121,7 @@ const Footer = () => {
               
               <div>
                 <p className="font-medium">Email:</p>
-                <p className="text-secondary-foreground/70">info@acearithmetic.com</p>
+                <p className="text-secondary-foreground/70">acearithmeticacademy@gmail.com</p>
               </div>
               
               <div>

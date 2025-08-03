@@ -86,8 +86,8 @@ Please contact me for more information.`;
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      content: "info@acearithmetic.com",
-      action: () => window.open("mailto:info@acearithmetic.com"),
+      content: "acearithmeticacademy@gmail.com",
+      action: () => window.open("mailto:acearithmeticacademy@gmail.com"),
       description: "24/7 email support"
     },
     {
@@ -133,108 +133,7 @@ Please contact me for more information.`;
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-3xl font-bold font-playfair mb-4">Get More Information</h3>
-              <p className="text-muted-foreground mb-6">
-                Fill out the form below and we'll contact you within 24 hours with detailed information about our programs.
-              </p>
-            </div>
-
-            <Card className="shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <MessageCircle className="h-5 w-5 text-primary" />
-                  <span>Contact Form</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Parent's Name *</label>
-                      <Input
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        placeholder="Enter your full name"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Phone Number *</label>
-                      <Input
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        placeholder="Enter your phone number"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email Address</label>
-                    <Input
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Child's Age *</label>
-                      <Input
-                        name="childAge"
-                        value={formData.childAge}
-                        onChange={handleInputChange}
-                        placeholder="e.g., 8 years"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Program Interest *</label>
-                      <select
-                        name="program"
-                        value={formData.program}
-                        onChange={handleInputChange}
-                        className="w-full p-3 border border-input rounded-md bg-background"
-                        required
-                      >
-                        <option value="">Select a program</option>
-                        {programs.map((program, index) => (
-                          <option key={index} value={program}>{program}</option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Additional Message</label>
-                    <Textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Any specific questions or requirements..."
-                      rows={4}
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full glow-shadow">
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
-
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
