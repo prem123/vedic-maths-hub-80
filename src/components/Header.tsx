@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
-import aceLogo from "@/assets/ace-logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src={aceLogo} alt="Ace Arithmetic Academy" className="h-12 w-12" />
+            <img src="/lovable-uploads/4d65900a-e414-4312-b300-77c96bc1e05a.png" alt="Ace Arithmetic Academy" className="h-12 w-12" />
             <div>
               <h1 className="text-2xl academy-name">Ace Arithmetic Academy</h1>
               <p className="text-xs text-muted-foreground font-medium tracking-wide">Excellence in Mathematics</p>
