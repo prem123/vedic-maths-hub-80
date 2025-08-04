@@ -62,17 +62,10 @@ const Hero = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                size="lg" 
-                onClick={scrollToContact}
-                className="bg-background text-foreground hover:bg-background/90 glow-shadow text-lg px-8 py-6"
-              >
-                Contact Us Now
-              </Button>
-              <Button 
                 variant="outline" 
                 size="lg" 
                 onClick={handleWhatsApp}
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6"
+                className="border-background/50 text-background hover:bg-background/20 backdrop-blur-sm text-lg px-8 py-6"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp Us
