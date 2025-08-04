@@ -7,13 +7,6 @@ import { Play, Star, Users, Trophy, Clock } from "lucide-react";
 const StudentsSection = () => {
   const videos = [
     {
-      id: "L4V10wb2cVc",
-      title: "Abacus Demo - Foundation Training",
-      description: "Watch our instructor demonstrate basic abacus techniques and mental visualization methods",
-      duration: "3:28",
-      level: "Beginner"
-    },
-    {
       id: "ik0yGbcFwTc", 
       title: "Juniors Performing Fast Calculations",
       description: "Young students showcasing incredible speed in mental calculations using abacus techniques",

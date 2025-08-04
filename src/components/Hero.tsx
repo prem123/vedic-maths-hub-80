@@ -98,10 +98,10 @@ const Hero = () => {
               
               {/* Play button overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <button 
-                  onClick={() => window.open("https://www.youtube.com/watch?v=L4V10wb2cVc", "_blank")}
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-6 shadow-2xl smooth-transition hover:scale-110"
-                >
+              <button 
+                onClick={() => window.open("https://www.youtube.com/watch?v=L4V10wb2cVc", "_blank")}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-6 shadow-2xl smooth-transition hover:scale-110"
+              >
                   <Play className="h-8 w-8 ml-1" />
                 </button>
               </div>
