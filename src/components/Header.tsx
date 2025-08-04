@@ -22,10 +22,10 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/lovable-uploads/4d65900a-e414-4312-b300-77c96bc1e05a.png" alt="Ace Arithmetic Academy" className="h-12 w-12" />
+            <img src="/lovable-uploads/4d65900a-e414-4312-b300-77c96bc1e05a.png" alt="Ace Arithmetic Academy" className="h-12 w-12 bg-transparent" />
             <div>
               <h1 className="text-2xl academy-name">Ace Arithmetic Academy</h1>
-              <p className="text-xs text-muted-foreground font-medium tracking-wide">Excellence in Mathematics</p>
+              <p className="text-xs text-muted-foreground font-medium tracking-wide">Where Logic Meets Speed</p>
             </div>
           </div>
 
