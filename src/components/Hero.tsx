@@ -65,7 +65,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 onClick={handleWhatsApp}
-                className="border-background/50 text-background hover:bg-background/20 backdrop-blur-sm text-lg px-8 py-6"
+                className="border-white/50 text-white hover:bg-white/20 backdrop-blur-sm text-lg px-8 py-6"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp Us
