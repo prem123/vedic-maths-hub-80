@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Play, Star } from "lucide-react";
 import heroImage from "@/assets/hero-classroom.jpg";
 
 const Hero = () => {
+  const [currentVideo, setCurrentVideo] = useState<string | null>(null);
+
+  const openVideo = (videoId: string) => {
+    setCurrentVideo(videoId);
+  };
+
+  const closeVideo = () => {
+    setCurrentVideo(null);
+  };
   const handleWhatsApp = () => {
     window.open("https://wa.link/k4scx5", "_blank");
   };
@@ -86,22 +96,23 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image */}
+          {/* Video Thumbnail */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl glow-shadow">
+              {/* YouTube Thumbnail */}
               <img 
-                src={heroImage} 
-                alt="Children learning mathematics at Ace Arithmetic Academy" 
+                src="https://img.youtube.com/vi/L4V10wb2cVc/maxresdefault.jpg" 
+                alt="Abacus Foundation Training - Ace Arithmetic Academy" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               
               {/* Play button overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-              <button 
-                onClick={() => window.open("https://www.youtube.com/watch?v=L4V10wb2cVc", "_blank")}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-6 shadow-2xl smooth-transition hover:scale-110"
-              >
+                <button 
+                  onClick={() => openVideo("L4V10wb2cVc")}
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-6 shadow-2xl smooth-transition hover:scale-110"
+                >
                   <Play className="h-8 w-8 ml-1" />
                 </button>
               </div>
@@ -117,6 +128,26 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {currentVideo && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeVideo}>
+          <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
+            <button 
+              onClick={closeVideo}
+              className="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl font-bold z-10"
+            >
+              ✕
+            </button>
+            <iframe
+              src={`https://www.youtube.com/embed/${currentVideo}?autoplay=1`}
+              className="w-full h-full rounded-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
