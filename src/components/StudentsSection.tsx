@@ -238,9 +238,6 @@ const StudentsSection = () => {
             <Button size="lg" onClick={handleWhatsApp} className="glow-shadow">
               Contact Us Today
             </Button>
-            <Button variant="outline" size="lg" onClick={() => window.open("https://www.youtube.com/channel/UCALXNu1guxsNnc3gjIAILFw", "_blank")}>
-              View All Videos
-            </Button>
           </div>
         </div>
 

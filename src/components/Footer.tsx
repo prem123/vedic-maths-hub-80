@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   const handleCall = () => {
-    window.open("tel:+919876543210", "_self");
+    window.open("tel:+919150478350", "_self");
   };
 
   const handleEmail = () => {
@@ -116,7 +116,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div>
                 <p className="font-medium">Phone:</p>
-                <p className="text-secondary-foreground/70">+91 98765 43210</p>
+                <p className="text-secondary-foreground/70">+91 91504 78350</p>
               </div>
               
               <div>

@@ -41,7 +41,7 @@ Message: ${formData.message}
 
 Please contact me for more information.`;
 
-    const whatsappUrl = `https://wa.me/+919876543210?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/+919150478350?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, "_blank");
     
     toast({
@@ -65,14 +65,14 @@ Please contact me for more information.`;
   };
 
   const handleCall = () => {
-    window.open("tel:+919876543210", "_self");
+    window.open("tel:+919150478350", "_self");
   };
 
   const contactInfo = [
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Call Us",
-      content: "+91 98765 43210",
+      content: "+91 91504 78350",
       action: handleCall,
       description: "Mon-Sat: 10:30 AM - 7 PM, Sun: 11 AM - 1 PM"
     },
@@ -172,7 +172,7 @@ Please contact me for more information.`;
                   </Button>
                   <Button onClick={handleCall} className="w-full justify-start" variant="outline">
                     <Phone className="mr-2 h-4 w-4" />
-                    Call: +91 98765 43210
+                    Call: +91 91504 78350
                   </Button>
                 </div>
               </div>
